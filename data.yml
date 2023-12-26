@@ -72,10 +72,16 @@ landscape:
           - item:
             description: Framework for simplifying flake setup
             homepage_url: https://github.com/accelbread/flakelight
-            logo: nixos.webp
+            logo: default.webp
             name: Flakelight
             repo_url: https://github.com/accelbread/flakelight
             project: community
+          - item:
+            description:  builtins.getFlake without the restrictions
+            homepage_url: https://github.com/ursi/get-flake
+            logo: default.webp
+            name: get-flake
+            repo_url: https://github.com/ursi/get-flake
       - subcategory:
         name: CLI
         items:
@@ -94,19 +100,19 @@ landscape:
         items:
           - item:
             description: A Nix library for building cargo projects. Never build twice thanks to incremental artifact caching. 
-            logo: nixos.webp
+            logo: default.webp
             name: crane
             repo_url: https://github.com/ipetkov/crane
             homepage_url: https://github.com/ipetkov/crane
           - item:
             description: Build Rust projects in Nix - no configuration, no code generation, no IFD, sandbox friendly. 
-            logo: nixos.webp
+            logo: nix_community.png
             name: naersk
             repo_url: https://github.com/nix-community/naersk
             homepage_url: https://github.com/nix-community/naersk
           - item:
             description: nix build file generator for rust crates 
-            logo: nixos.webp
+            logo: nix_community.png
             name: crate2nix
             repo_url: https://github.com/nix-community/crate2nix
             homepage_url: https://github.com/nix-community/crate2nix
@@ -114,12 +120,40 @@ landscape:
         name: Any
         items:
           - item:
+            description: Instant, easy, and predictable development environments
+            logo: jetpack.png
+            name: devbox
+            project: community
+            repo_url: https://github.com/jetpack-io/devbox
+            homepage_url: https://www.jetpack.io/devbox/
+          - item:
             description: Fast, Declarative, Reproducible, and Composable Developer Environments.
             logo: devenv.png
             name: devenv
             project: community
             repo_url: https://github.com/cachix/devenv
             homepage_url: https://devenv.sh/
+          - item:
+            description:  Per project developer environments 
+            logo: numtide.png
+            name: devshell
+            project: community
+            repo_url: https://github.com/numtide/devshell
+            homepage_url: https://numtide.github.io/devshell/
+          - item:
+            description: Harness the power of Nix
+            logo: flox.png
+            name: flox
+            project: commercial
+            repo_url: https://github.com/flox/flox
+            homepage_url: https://flox.dev
+          - item:
+            description: Build software collaboratively with the power of AI, on any device, without spending a second on setup.
+            logo: replit.png
+            name: replit
+            project: commercial
+            homepage_url: https://replit.com/
+ 
   - category:
     name: Infrastructure
     subcategories:
@@ -128,7 +162,7 @@ landscape:
         items:
           - item:
             description: A simple, stateless NixOS deployment tool 
-            logo: nixos.webp
+            logo: default.webp
             name: colmena
             repo_url: https://github.com/zhaofengli/colmena
             homepage_url: https://github.com/zhaofengli/colmena
@@ -206,11 +240,35 @@ landscape:
             repo_url: https://github.com/DeterminateSystems/magic-nix-cache-action
             homepage_url: https://github.com/marketplace/actions/magic-nix-cache
           - item:
+            description: build tool and environment manager that replaces justfiles/makefiles, docker, and the annoying parts of READMEs
+            logo: default.webp
+            name: Garn
+            repo_url: https://github.com/garnix-io/garn
+            homepage_url: https://garn.io/
+          - item:
+            description: Makes CI with Nix and garn fast — a few seconds for no-op changes
+            logo: default.webp
+            name: Garnix CI
+            project: commercial
+            homepage_url: https://garnix.io/
+          - item:
             description: Simple Nix-first Continous Integration.
             logo: hercules.svg
             name: Hercules CI
             project: commercial
             homepage_url: https://hercules-ci.com/
+          - item:
+            description: Hydra, the Nix-based continuous build system
+            logo: nixos.webp
+            name: Hydra
+            repo_url: https://github.com/NixOS/hydra
+            homepage_url:  https://nixos.org/hydra 
+          - item:
+            description: NixOps is a tool for deploying to NixOS machines in a network or cloud.
+            logo: nixos.webp
+            name: NixOps
+            repo_url: https://github.com/NixOS/nixops
+            homepage_url:  https://nixos.org/nixops
           - item:
             description: Nix Binary Cache hosting infrastructure.
             logo: cachix.png
@@ -224,6 +282,18 @@ landscape:
             logo: cachix.png
             name: install-nix-action
             homepage_url: https://github.com/cachix/install-nix-action
+          - item:
+            description: Bob is a high-level build tool for multi-language projects. 
+            logo: default.webp
+            name: Bob
+            project: commercial
+            homepage_url: https://bob.build/
+          - item:
+            description: event-driven automation for Nomad
+            logo: default.webp
+            name: cicero
+            homepage_url:  https://handbook.cicero.ci.iog.io
+            repo_url: https://github.com/input-output-hk/cicero
 
   - category:
     name: Documentation
@@ -240,9 +310,9 @@ landscape:
             homepage_url: https://nixlang.wiki
           - item:
             description: unnofficial wiki
-            logo: nixos.webp
+            logo: default.webp
             name: nixos.wiki
-            homepage_url: https://github.com/nix-community/naersk
+            homepage_url: https://nixos.wiki
       - subcategory:
         name: Tutorials
         items:
@@ -290,6 +360,18 @@ landscape:
             project: official
             repo_url: https://github.com/NixOS/nixpkgs/tree/master/nixos/doc/manual
             homepage_url: https://nixos.org/manual/nixos/stable/
+          - item:
+            description: Nix Book.
+            logo: default.webp
+            name: Nix Book
+            repo_url: https://github.com/divnix/nix-book
+            homepage_url:  https://book.divnix.com
+          - item:
+            description: Nix dictionary
+            logo: numtide.png
+            name: nixionary.org
+            repo_url: https://github.com/numtide/nixionary.org
+            homepage_url:  http://nixionary.org/
 
       - subcategory:
         name: Index
@@ -307,7 +389,7 @@ landscape:
         items:
           - item:
             description: Nix Conference Videos
-            logo: nixos.webp
+            logo: default.webp
             name: NixCon
             project: community
             homepage_url: https://www.youtube.com/@NixCon
@@ -317,3 +399,856 @@ landscape:
             name: NixOS Foundation
             project: official
             homepage_url: https://www.youtube.com/@NixOS-Foundation
+  - category:
+    name: Others
+    subcategories:
+      - subcategory:
+        name: Uncategorized
+        items:
+          - item:
+            description: The Uncompromising Nix Code Formatter
+            logo: default.webp
+            name: alejandra
+            repo_url: https://github.com/kamadorueda/alejandra
+            homepage_url:  https://kamadorueda.github.io/alejandra/
+          - item:
+            description: An agenix extension adding secret generation and automatic rekeying using a YubiKey or master-identity
+            logo: default.webp
+            name: agenix-rekey
+            repo_url: https://github.com/oddlama/agenix-rekey
+            homepage_url: https://github.com/oddlama/agenix-rekey
+          - item:
+            description: A repository containing all of the cabal files for all public Haskell packages converted to json
+            logo: nix_community.png
+            name: all-cabal-json
+            repo_url: https://github.com/nix-community/all-cabal-json
+            homepage_url: https://github.com/nix-community/all-cabal-json
+          - item:
+            description: Nix-packaged Android SDK
+            logo: default.webp
+            name: android-nixpkgs
+            repo_url: https://github.com/tadfisher/android-nixpkgs
+            homepage_url: https://github.com/tadfisher/android-nixpkgs
+          - item:
+            description: Multi-tenant Nix Binary Cache
+            logo: default.webp
+            name: attic
+            repo_url: https://github.com/zhaofengli/attic
+            homepage_url: https://docs.attic.rs/
+          - item:
+            description: Nix flake with package, NixOS module and basic VM test for authentik
+            logo: nix_community.png
+            name: authentik-nix
+            repo_url: https://github.com/nix-community/authentik-nix
+            homepage_url: https://github.com/nix-community/authentik-nix
+          - item:
+            description: A curated list of the best resources
+            logo: nix_community.png
+            name: awesome-nix
+            repo_url: https://github.com/nix-community/awesome-nix
+            homepage_url: https://github.com/nix-community/awesome-nix
+          - item:
+            description: A KISS deployment tool to keep your NixOS fleet
+            logo: default.webp
+            name: bento
+            repo_url: https://github.com/rapenne-s/bento/
+            homepage_url: https://github.com/rapenne-s/bento/
+          - item:
+            description: Nix Ops for Terraform, Consul, Vault, Nomad
+            logo: default.webp
+            name: bitte
+            repo_url: https://github.com/input-output-hk/bitte
+            homepage_url: https://github.com/input-output-hk/bitte
+          - item:
+            description: Nix expression for your Bundler-managed application
+            logo: nix_community.png
+            name: bundix
+            repo_url: https://github.com/nix-community/bundix
+            homepage_url: https://github.com/nix-community/bundix
+          - item:
+            description: Share the love of Nix
+            homepage_url: https://builtwithnix.org
+            logo: nix_community.png
+            name: builtwithnix.org
+            repo_url: https://github.com/nix-community/builtwithnix.org
+          - item:
+            description: Cache Nix store in GitHub Actions
+            logo: nix_community.png
+            name: cache-nix-action
+            repo_url: https://github.com/nix-community/cache-nix-action
+            homepage_url: https://github.com/nix-community/cache-nix-action
+          - item:
+            description: Convert deps.edn to a nix expression
+            logo: default.webp
+            name: clj2nix
+            repo_url: https://github.com/hlolli/clj2nix
+            homepage_url: https://github.com/hlolli/clj2nix
+          - item:
+            description: Comma runs software without installing it
+            logo: nix_community.png
+            name: comma
+            repo_url: https://github.com/nix-community/comma
+            homepage_url: https://github.com/nix-community/comma
+          - item:
+            description: Build crystal projects using nix.
+            logo: nix_community.png
+            name: crystal2nix
+            repo_url: https://github.com/nix-community/crystal2nix
+            homepage_url: https://github.com/nix-community/crystal2nix
+          - item:
+            description: Format disks with nix-config
+            logo: nix_community.png
+            name: disko
+            repo_url: https://github.com/nix-community/disko
+            homepage_url: https://github.com/nix-community/disko
+          - item:
+            description: docker images from nixpkgs
+            logo: nix_community.png
+            name: docker-nixpkgs
+            repo_url: https://github.com/nix-community/docker-nixpkgs
+            homepage_url: https://github.com/nix-community/docker-nixpkgs
+          - item:
+            description: nix-community reference documentation
+            homepage_url: https://nix-community.github.io/docnix/
+            logo: nix_community.png
+            name: docnix
+            repo_url: https://github.com/nix-community/docnix
+          - item:
+            description: Simplified nix packaging for various programming language ecosystems
+            logo: nix_community.png
+            name: dream2nix
+            repo_url: https://github.com/nix-community/dream2nix
+            homepage_url: https://github.com/nix-community/dream2nix
+          - item:
+            description: A collection of software packages managed with dream2nix
+            logo: nix_community.png
+            name: dreampkgs
+            repo_url: https://github.com/nix-community/dreampkgs
+            homepage_url: https://github.com/nix-community/dreampkgs
+          - item:
+            description: Convert Eask into Nix expressions
+            logo: nix_community.png
+            name: eask2nix
+            repo_url: https://github.com/nix-community/eask2nix
+            homepage_url: https://github.com/nix-community/eask2nix
+          - item:
+            description: Automatically generate Nix expressions for Emacs packages
+            logo: nix_community.png
+            name: emacs2nix
+            repo_url: https://github.com/nix-community/emacs2nix
+            homepage_url: https://github.com/nix-community/emacs2nix
+          - item:
+            description: Bleeding edge emacs overlay
+            logo: nix_community.png
+            name: emacs-overlay
+            repo_url: https://github.com/nix-community/emacs-overlay
+            homepage_url: https://github.com/nix-community/emacs-overlay
+          - item:
+            description: Nixpkgs for the Ethereum ecosystem.
+            logo: nix_community.png
+            name: ethereum.nix
+            repo_url: https://github.com/nix-community/ethereum.nix
+            homepage_url: https://github.com/nix-community/ethereum.nix
+          - item:
+            description: All-in-one management system for everything you need to be productive on your computer.
+            logo: default.webp
+            name: fleek
+            repo_url: https://github.com/ublue-os/fleek
+            homepage_url: https://getfleek.dev/
+          - item:
+            description: Convert applications using Go modules to Nix
+            logo: nix_community.png
+            name: gomod2nix
+            repo_url: https://github.com/nix-community/gomod2nix
+            homepage_url: https://github.com/nix-community/gomod2nix
+          - item:
+            description: Elements of Nix re-implemented as Go libraries
+            logo: nix_community.png
+            name: go-nix
+            repo_url: https://github.com/nix-community/go-nix
+            homepage_url: https://github.com/nix-community/go-nix
+          - item:
+            description: Generate Nix expressions which build Gradle-based projects.
+            logo: default.webp
+            name: gradle2nix
+            repo_url: https://github.com/tadfisher/gradle2nix
+            homepage_url: https://github.com/tadfisher/gradle2nix
+          - item:
+            description: Nix binary cache implemented in rust
+            logo: nix_community.png
+            name: harmonia
+            repo_url: https://github.com/nix-community/harmonia
+            homepage_url: https://github.com/nix-community/harmonia
+          - item:
+            description: Alternative Haskell Infrastructure for Nixpkgs 
+            logo: default.webp
+            name: haskell.nix
+            repo_url: https://github.com/input-output-hk/haskell.nix
+            homepage_url: https://github.com/input-output-hk/haskell.nix
+          - item:
+            description: Manage a user environment using Nix
+            logo: nix_community.png
+            name: home-manager
+            repo_url: https://github.com/nix-community/home-manager
+            homepage_url: https://github.com/nix-community/home-manager
+          - item:
+            description: Filesystem-based module system for Nix
+            logo: nix_community.png
+            name: haumea
+            repo_url: https://github.com/nix-community/haumea
+            homepage_url: https://github.com/nix-community/haumea
+          - item:
+            description: Modules to help you handle persistent state on systems with ephemeral root storage
+            logo: nix_community.png
+            name: impermanence
+            repo_url: https://github.com/nix-community/impermanence
+            homepage_url: https://github.com/nix-community/impermanence
+          - item:
+            description:  Node.js modules installation using Nix 
+            logo: default.webp
+            name: js2nix
+            repo_url: https://github.com/canva-public/js2nix
+            homepage_url: https://github.com/canva-public/js2nix
+          - item:
+            description: krops is a lightweight toolkit to deploy NixOS systems, remotely or locally.
+            logo: default.webp
+            name: krops
+            repo_url: https://cgit.krebsco.de/krops/about/
+            homepage_url: https://cgit.krebsco.de/krops/about/
+          - item:
+            description: Secure Boot for NixOS
+            logo: nix_community.png
+            name: lanzaboote
+            repo_url: https://github.com/nix-community/lanzaboote
+            homepage_url: https://github.com/nix-community/lanzaboote
+          - item:
+            description: Lollypop Operations - NixOS Deployment Tool
+            logo: default.webp
+            name: Lollypops
+            repo_url: https://github.com/pinpox/lollypops
+            homepage_url: https://github.com/pinpox/lollypops
+          - item:
+            description: Your project’s nix-env
+            logo: nix_community.png
+            name: lorri
+            repo_url: https://github.com/nix-community/lorri
+            homepage_url: https://github.com/nix-community/lorri
+          - item:
+            description: Create highly reproducible python environments
+            logo: default.webp
+            name: mach-nix
+            repo_url: https://github.com/DavHau/mach-nix
+            homepage_url: https://github.com/DavHau/mach-nix
+          - item:
+            description: Deterministic Maven builds using Nix
+            logo: nix_community.png
+            name: mavenix
+            repo_url: https://github.com/nix-community/mavenix
+            homepage_url: https://github.com/nix-community/mavenix
+          - item:
+            description: Declarative Minecraft server in NixOS
+            logo: nix_community.png
+            name: mineflake
+            repo_url: https://github.com/nix-community/mineflake
+            homepage_url: https://github.com/nix-community/mineflake
+          - item:
+            description: Snapshot testing for Nix
+            logo: nix_community.png
+            name: namaka
+            repo_url: https://github.com/nix-community/namaka
+            homepage_url: https://github.com/nix-community/namaka
+          - item:
+            description: npm packages in Nix
+            logo: nix_community.png
+            name: napalm
+            repo_url: https://github.com/nix-community/napalm
+            homepage_url: https://github.com/nix-community/napalm
+          - item:
+            description: An archive-less dockerTools.buildImage implementation
+            logo: default.webp
+            name: nix2containers
+            repo_url: https://github.com/nlewo/nix2container
+            homepage_url: https://github.com/nlewo/nix2container
+          - item:
+            description: generate nix expression from config.toml
+            logo: nix_community.png
+            name: nix4vscode
+            repo_url: https://github.com/nix-community/nix4vscode
+            homepage_url: https://github.com/nix-community/nix4vscode
+          - item:
+            description: Generate configuration files using Nix
+            logo: nix_community.png
+            name: nixago
+            repo_url: https://github.com/nix-community/nixago
+            homepage_url: https://github.com/nix-community/nixago
+          - item:
+            description: NixOS Vagrant boxes
+            logo: nix_community.png
+            name: nixbox
+            repo_url: https://github.com/nix-community/nixbox
+            homepage_url: https://github.com/nix-community/nixbox
+          - item:
+            description: Nix+Bazel Codelab
+            logo: tweag.png
+            name: nix_bazel_codelab
+            repo_url: https://github.com/tweag/nix_bazel_codelab
+            homepage_url: https://github.com/tweag/nix_bazel_codelab
+          - item:
+            description: Fast, secure and scalable Nix builds as a service.
+            logo: nixbuild.svg
+            name: nixbuild.net
+            project: commercial
+            homepage_url: https://nixbuild.net
+          - item:
+            description: Nix language server, based on nix libraries
+            logo: nix_community.png
+            name: nixd
+            repo_url: https://github.com/nix-community/nixd
+            homepage_url: https://github.com/nix-community/nixd
+          - item:
+            description: Nix builder for Dart packages
+            logo: default.webp
+            name: nix-dart
+            repo_url: https://github.com/tadfisher/nix-dart
+            homepage_url: https://github.com/tadfisher/nix-dart
+          - item:
+            description: nix modules for darwin
+            logo: nix-darwin.png
+            name: nix-darvin
+            repo_url: https://github.com/LnL7/nix-darwin
+            homepage_url: https://github.com/LnL7/nix-darwin
+          - item:
+            description:  Swiss army knife container for vscode development environments
+            logo: default.webp
+            name: nix-devcontainer
+            repo_url: https://github.com/xtruder/nix-devcontainer
+            homepage_url: https://github.com/xtruder/nix-devcontainer
+          - item:
+            description: Tool to generate documentation for Nix library functions
+            logo: nix_community.png
+            name: nixdoc
+            repo_url: https://github.com/nix-community/nixdoc
+            homepage_url: https://github.com/nix-community/nixdoc
+          - item:
+            description: An automatic editor for replit.nix files
+            logo: replit.png
+            name: nix-editor
+            repo_url: https://github.com/replit/nix-editor
+            homepage_url: https://github.com/replit/nix-editor
+          - item:
+            description: out-of-tree shell.nix files
+            logo: nix_community.png
+            name: nix-environments
+            repo_url: https://github.com/nix-community/nix-environments
+            homepage_url: https://github.com/nix-community/nix-environments
+          - item:
+            description: Allows switch environment for Visual Studio Code using Nix Package Manager. 
+            logo: default.webp
+            name: nix-env-selector
+            repo_url: https://github.com/arrterian/nix-env-selector
+            homepage_url: https://github.com/arrterian/nix-env-selector
+          - item:
+            description: An ad-hoc container image registry that provides packages from the Nix package manager.
+            logo: nixery.png
+            name: nixery
+            repo_url: https://cs.tvl.fyi/depot/-/tree/tools/nixery
+            homepage_url: https://nixery.dev
+          - item:
+            description: Parallel nix evaluator with a streamable json output
+            logo: nix_community.png
+            name: nix-eval-jobs
+            repo_url: https://github.com/nix-community/nix-eval-jobs
+            homepage_url: https://github.com/nix-community/nix-eval-jobs
+          - item:
+            description: A wrapper tool for nix OpenGL application
+            logo: nix_community.png
+            name: nixGL
+            repo_url: https://github.com/nix-community/nixGL
+            homepage_url: https://github.com/nix-community/nixGL
+          - item:
+            description: Run OpenGL/Cuda programs built with Nix, on all Linux distributions.
+            logo: numtide.png
+            name: nix-gl-host
+            repo_url: https://github.com/numtide/nix-gl-host
+            homepage_url: https://github.com/numtide/nix-gl-host
+          - item:
+            description: Search historical versions of nix packages
+            logo: default.webp
+            name: nixhub.io
+            homepage_url: https://nixhub.io
+          - item:
+            description: Quickly locate nix packages with specific files
+            logo: nix_community.png
+            name: nix-index
+            repo_url: https://github.com/nix-community/nix-index
+            homepage_url: https://github.com/nix-community/nix-index
+          - item:
+            description: Weekly updated nix-index database
+            logo: nix_community.png
+            name: nix-index-database
+            repo_url: https://github.com/nix-community/nix-index-database
+            homepage_url: https://github.com/nix-community/nix-index-database
+          - item:
+            description: Generate Nix packages from URLs
+            logo: nix_community.png
+            name: nix-init
+            repo_url: https://github.com/nix-community/nix-init
+            homepage_url: https://github.com/nix-community/nix-init
+          - item:
+            description: Run unpatched dynamic binaries on NixOS
+            logo: nix_community.png
+            name: nix-ld-rs
+            repo_url: https://github.com/nix-community/nix-ld-rs
+            homepage_url: https://github.com/nix-community/nix-ld-rs
+          - item:
+            description: A ranger-like flake.lock viewer
+            logo: nix_community.png
+            name: nix-melt
+            repo_url: https://github.com/nix-community/nix-melt
+            homepage_url: https://github.com/nix-community/nix-melt
+          - item:
+            description: A linux distribution based on Nix
+            logo: nix_community.png
+            name: NixNG
+            repo_url: https://github.com/nix-community/NixNG
+            homepage_url: https://github.com/nix-community/NixNG
+          - item:
+            description: Nix-enabled environment for your Android device.
+            logo: nix_community.png
+            name: nix-on-droid
+            repo_url: https://github.com/nix-community/nix-on-droid
+            homepage_url: https://github.com/nix-community/nix-on-droid
+          - item:
+            description: Nix based Linux Distribution
+            homepage_url: https://nixos.org
+            logo: nixos.webp
+            name: NixOS
+            project: official
+            repo_url: https://github.com/NixOS/nixpkgs/tree/master/nixos
+          - item:
+            description: Nix based Linux Distribution
+            homepage_url: https://mobile.nixos.org/
+            logo: nixos.webp
+            name: Mobile NixOS
+            project: official
+            repo_url: https://github.com/NixOS/mobile-nixos
+          - item:
+            description: SnowflakeOS is a NixOS based Linux distribution focused on beginner friendliness and ease of use.
+            homepage_url: https://snowflakeos.org/
+            logo: default.webp
+            name: SnowflakeOS
+            repo_url: https://github.com/snowflakelinux/snowflake-modules
+          - item:
+            description:  A formatter for Nix code
+            logo: serokell.png
+            name: nixfmt
+            repo_url: https://github.com/serokell/nixfmt
+            homepage_url: https://github.com/serokell/nixfmt
+          - item:
+            description: Run Marp tools via Nix
+            logo: tweag.png
+            name: nix-marp
+            repo_url: https://github.com/tweag/nix-marp
+            homepage_url: https://github.com/tweag/nix-marp
+          - item:
+            description: install nixos everywhere via ssh
+            logo: nix_community.png
+            name: nixos-anywhere
+            repo_url: https://github.com/nix-community/nixos-anywhere
+            homepage_url: https://github.com/nix-community/nixos-anywhere
+          - item:
+            description: A libadwaita/gtk4 app for editing NixOS configurations
+            logo: default.webp
+            name: nixos-config-editor
+            repo_url: https://github.com/vlinkz/nixos-conf-editor
+            homepage_url: https://github.com/vlinkz/nixos-conf-editor
+          - item:
+            description: Collection of image builders
+            logo: nix_community.png
+            name: nixos-generators
+            repo_url: https://github.com/nix-community/nixos-generators
+            homepage_url: https://github.com/nix-community/nixos-generators
+          - item:
+            description: Questions for the weekly Nix Hour.
+            logo: tweag.png
+            name: nix-hour
+            repo_url: https://github.com/tweag/nix-hour
+            homepage_url: https://www.youtube.com/playlist?list=PLyzwHTVJlRc8yjlx4VR4LU5A5O44og9in
+          - item:
+            description: scripts to install NixOS on various server
+            logo: nix_community.png 
+            name: nixos-install-scripts
+            repo_url: https://github.com/nix-community/nixos-install-scripts
+            homepage_url: https://github.com/nix-community/nixos-install-scripts
+          - item:
+            description: NixOS Router build on the Raspberry Pi
+            logo: default.webp 
+            name: nixos-raspberrypi-router
+            repo_url: https://github.com/pinpox/nixos-raspberrypi-router
+            homepage_url: https://github.com/pinpox/nixos-raspberrypi-router
+          - item:
+            description: NixOS on WSL
+            logo: nix_community.png
+            name: NixOS-WSL
+            repo_url: https://github.com/nix-community/NixOS-WSL
+            homepage_url: https://github.com/nix-community/NixOS-WSL
+          - item:
+            description: Nix old package search
+            logo: default.webp
+            name: nix-packages-history
+            homepage_url: https://history.nix-packages.com/
+          - item:
+            description: Generate a graph from nixpkgs
+            logo: tweag.png
+            name: nixpkgs-graph
+            repo_url: https://github.com/tweag/nixpkgs-graph
+            homepage_url: https://github.com/tweag/nixpkgs-graph
+          - item:
+            description: Explore the nixpkgs dependency graph
+            logo: tweag.png
+            name: nixpkgs-graph-explorer
+            repo_url: https://github.com/tweag/nixpkgs-graph-explorer
+            homepage_url: https://github.com/tweag/nixpkgs-graph-explorer
+          - item:
+            description: nixpkgs lib for cheap instantiation
+            logo: nix_community.png 
+            name: nixpkgs.lib
+            repo_url: https://github.com/nix-community/nixpkgs.lib
+            homepage_url: https://github.com/nix-community/nixpkgs.lib
+          - item:
+            description: A fast semantic linter for Nix using tree-sitter
+            logo: nix_community.png 
+            name: nixpkgs-lint
+            repo_url: https://github.com/nix-community/nixpkgs-lint
+            homepage_url: https://github.com/nix-community/nixpkgs-lint
+          - item:
+            description: Review pull-requests on nixpkgs.
+            logo: default.webp
+            name: nixpkgs-review
+            repo_url: https://github.com/Mic92/nixpkgs-review
+            homepage_url: https://github.com/Mic92/nixpkgs-review
+            project: community
+          - item:
+            description: nixpkgs with the unfree bits enabled
+            homepage_url: https://github.com/numtide/nixpkgs-unfree
+            logo: numtide.png
+            name: nixpkgs-unfree
+            repo_url: https://github.com/numtide/nixpkgs-unfree
+            project: community
+          - item:
+            description: Auto-updating terraform providers for nix
+            logo: nix_community.png
+            name: nixpkgs-terraform-providers-bin
+            repo_url: https://github.com/nix-community/nixpkgs-terraform-providers-bin
+            homepage_url: https://github.com/nix-community/nixpkgs-terraform-providers-bin
+          - item:
+            description: Re-implementation of Nix remote build protocol
+            logo: tweag.png
+            name: nix-remote-rust
+            repo_url: https://github.com/tweag/nix-remote-rust
+            homepage_url: https://github.com/tweag/nix-remote-rust
+          - item:
+            description:  Build nix packages that use npm/yarn 
+            logo: default.webp
+            name: nix-npm-buildpackage
+            repo_url: https://github.com/serokell/nix-community/nix-npm-buildpackage
+            homepage_url: https://github.com/serokell/nix-community/nix-npm-buildpackage
+          - item:
+            description: A simple gtk4/libadwaita software center to easily install and manage nix packages
+            logo: default.webp
+            name: nix-software-center
+            repo_url: https://github.com/vlinkz/nix-software-center
+            homepage_url: https://github.com/vlinkz/nix-software-center
+          - item:
+            description: Brings native understanding of Nix packages to containerd
+            logo: default.webp
+            name: nix-snapshotter
+            repo_url: https://github.com/pdtpartners/nix-snapshotter
+            homepage_url: https://github.com/pdtpartners/nix-snapshotter
+          - item:
+            description: Nix integration to straight.el
+            logo: nix_community.png
+            name: nix-straight.el
+            repo_url: https://github.com/nix-community/nix-straight.el
+            homepage_url: https://github.com/nix-community/nix-straight.el
+          - item:
+            description: Simple unit-testing for Nix
+            logo: nix_community.png
+            name: nixt
+            repo_url: https://github.com/nix-community/nixt
+            homepage_url: https://github.com/nix-community/nixt
+          - item:
+            description: A CLI tool to extract the graph of derivations from a Nix flake.
+            logo: tweag.png
+            name: nixtract
+            repo_url: https://github.com/tweag/nixtract
+            homepage_url: https://github.com/tweag/nixtract
+          - item:
+            description: Unit testing for Nix code
+            logo: nix_community.png 
+            name: nix-unit
+            repo_url: https://github.com/nix-community/nix-unit
+            homepage_url: https://github.com/nix-community/nix-unit
+          - item:
+            description: Install & Run nix without root permissions
+            logo: nix_community.png 
+            name: nix-user-chroot
+            repo_url: https://github.com/nix-community/nix-user-chroot
+            homepage_url: https://github.com/nix-community/nix-user-chroot
+          - item:
+            description: Find all versions of a package that were available in a channel and the revision you can download it from.
+            logo: default.webp
+            name: nix-versions
+            homepage_url: https://lazamar.co.uk/nix-versions/
+          - item:
+            description: A CLI tool for finding/using versions of nix packages
+            logo: default.webp
+            name: nix-version-search-cli
+            homepage_url: https://github.com/jeff-hykin/nix_version_search_cli
+          - item:
+            description: Configure Neovim with Nix
+            logo: nix_community.png 
+            name: nixvim
+            repo_url: https://github.com/nix-community/nixvim
+            homepage_url: https://github.com/nix-community/nixvim
+          - item:
+            description: Nix expressions for VSCode and OpenVSX extensions
+            logo: nix_community.png 
+            name: nix-vscode-extensions
+            repo_url: https://github.com/nix-community/nix-vscode-extensions
+            homepage_url: https://github.com/nix-community/nix-vscode-extensions
+          - item:
+            description: nix function exploring
+            logo: nix_community.png
+            name: noogle
+            repo_url: https://github.com/nix-community/noogle
+            homepage_url: https://noogle.dev
+          - item:
+            description: Nix flakes with systems à la carte.
+            logo: default.webp
+            name: nosys
+            repo_url: https://github.com/divnix/nosys
+            homepage_url: https:/github.com/divnix/nosys
+          - item:
+            description: nixify npm based packages
+            logo: nix_community.png 
+            name: npnlock2nix
+            repo_url: https://github.com/nix-community/npnlock2nix
+            homepage_url: https://github.com/nix-community/npnlock2nix
+          - item:
+            description: NUR package search
+            logo: nix_community.png
+            name: nur-search
+            repo_url: https://github.com/nix-community/nur-search
+            homepage_url: https://github.com/nix-community/nur-search
+          - item:
+            description: A standalone Nix binary cache server
+            logo: default.webp
+            name: nur-serve
+            repo_url: https://github.com/edolstra/nix-serve
+            homepage_url: https://github.com/edolstra/nix-serve
+          - item:
+            description:  Nix Flake templates for various languages
+            logo: serokell.png
+            name: nix-templates
+            repo_url: https://github.com/serokell/nix-templates
+            homepage_url: https://github.com/serokell/nix-templates
+          - item:
+            description: Nix fetcher calls from repository URLs
+            logo: nix_community.png
+            name: nurl
+            repo_url: https://github.com/nix-community/nurl
+            homepage_url: https://github.com/nix-community/nurl
+          - item:
+            description: Turn opam-based OCaml projects into Nix derivations
+            logo: tweag.png
+            name: opam-nix
+            repo_url: https://github.com/tweag/opam-nix
+            homepage_url: https://github.com/tweag/opam-nix
+          - item:
+            description: A command-line tool for patching shell scripts inspired by resholve
+            logo: nix_community.png
+            name: patsh
+            repo_url: https://github.com/nix-community/patsh
+            homepage_url: https://github.com/nix-community/patsh
+          - item:
+            description: Freeze pip-installable packages into Nix
+            logo: nix_community.png
+            name: pip2nix
+            repo_url: https://github.com/nix-community/pip2nix
+            homepage_url: https://github.com/nix-community/pip2nix
+          - item:
+            description: Load pnpm lock files into nix
+            logo: nix_community.png
+            name: pnpm2nix
+            repo_url: https://github.com/nix-community/pnpm2nix
+            homepage_url: https://github.com/nix-community/pnpm2nix
+          - item:
+            description: Convert poetry projects to nix automagically
+            logo: nix_community.png
+            name: poetry2nix
+            repo_url: https://github.com/nix-community/poetry2nix
+            homepage_url: https://github.com/nix-community/poetry2nix
+          - item:
+            description: Transpile PureScript code to Nix.
+            logo: default.webp
+            name: purenix
+            repo_url: https://github.com/purenix-org/purenix
+            homepage_url: https://hackage.haskell.org/package/purenix
+          - item:
+            description: Utility functions for working with data from Nix in Python
+            logo: nix_community.png
+            name: pynixutil
+            repo_url: https://github.com/nix-community/pynixutil
+            homepage_url: https://github.com/nix-community/pynixutil
+          - item:
+            description: Nix utilities to work with Python projects
+            logo: nix_community.png
+            name: pyproject.nix
+            repo_url: https://github.com/nix-community/pyproject.nix
+            homepage_url: https://github.com/nix-community/pyproject.nix
+          - item:
+            description: Queue and retry Nix post-build-hook
+            logo: nix_community.png
+            name: queued-build-hook
+            repo_url: https://github.com/nix-community/queued-build-hook
+            homepage_url: https://github.com/nix-community/queued-build-hook
+          - item:
+            description: A Nix parser written in Rust 
+            logo: nix_community.png
+            name: rnix-parser
+            repo_url: https://github.com/nix-community/rnix-parser
+            homepage_url: https://github.com/nix-community/rnix-parser
+          - item:
+            description: Build Android (AOSP) using Nix
+            logo: nix_community.png
+            name: robotinix
+            repo_url: https://github.com/nix-community/robotinix
+            homepage_url: https://github.com/nix-community/robotinix
+          - item:
+            description: Rules for importing Nixpkgs packages into Bazel.
+            logo: tweag.png
+            name: rules_nixpkgs
+            repo_url: https://github.com/tweag/rules_nixpkgs
+            homepage_url: https://github.com/tweag/rules_nixpkgs
+          - item:
+            description: Run nix software without installing nix!
+            logo: default.webp
+            name: runix
+            repo_url: https://github.com/timbertson/runix
+            homepage_url: https://github.com/timbertson/runix
+          - item:
+            description: Spectrum is a Linux-based system that uses the Nix package manager
+            logo: default.webp
+            name: Spectrum
+            repo_url: https://spectrum-os.org/git/spectrum/
+            homepage_url: https://spectrum-os.org/
+          - item:
+            description: NixOS profiles for servers
+            logo: nix_community.png
+            name: srvos
+            repo_url: https://github.com/nix-community/srvos
+            homepage_url: https://github.com/nix-community/srvos
+          - item:
+            description: A DevOps framework for the SDLC with the power of Nix and Flakes.
+            logo: std.png
+            name: std
+            repo_url: https://github.com/divnix/std
+            homepage_url: https://github.com/divnix/std
+          - item:
+            description: A Nix fetcher for Steam apps
+            logo: nix_community.png
+            name: steam-fetcher
+            repo_url: https://github.com/nix-community/steam-fetcher
+            homepage_url: https://github.com/nix-community/steam-fetcher
+          - item:
+            description: Static site generator in Nix expression language.
+            logo: default.webp
+            name: styx
+            repo_url: https://github.com/styx-static/styx
+            homepage_url: https://styx-static.github.io/styx-site/
+          - item:
+            description: Provide access to vault secrets to systemd services
+            logo: numtide.png
+            name: systemd-vaultd
+            repo_url: https://github.com/numtide/systemd-vaultd
+            homepage_url: https://github.com/numtide/systemd-vaultd
+          - item:
+            description: Manage system config using nix on any distro
+            logo: numtide.png
+            name: system-manager
+            repo_url: https://github.com/numtide/system-manager
+            homepage_url: https://github.com/numtide/system-manager
+          - item:
+            description:  Flake templates
+            logo: nixos.webp
+            name: templates
+            project: official
+            repo_url: https://github.com/NixOS/templates
+            homepage_url: https://github.com/NixOS/templates
+          - item:
+            description: Nix flake templates managed by the community
+            logo: nix_community.png
+            name: templates nix-community
+            repo_url: https://github.com/nix-community/templates
+            homepage_url: https://github.com/nix-community/templates
+          - item:
+            description: A NixOS way to create terraform json files.
+            logo: terranix.svg
+            name: terranix
+            repo_url: https://github.com/terranix/terranix
+            homepage_url: https://terranix.org/
+          - item:
+            description: treefmt nix configuration
+            logo: numtide.png
+            name: treefmt-nix
+            repo_url: https://github.com/numtide/treefmt-nix
+            homepage_url: https://github.com/numtide/treefmt-nix
+          - item:
+            description: Nix grammar for tree-sitter
+            logo: nix_community.png
+            name: tree-sitter-nix
+            repo_url: https://github.com/nix-community/tree-sitter-nix
+            homepage_url: https://github.com/nix-community/tree-sitter-nix
+          - item:
+            description: Distributed trust and reproducibility tracking for binary caches
+            logo: nix_community.png
+            name: trustix
+            repo_url: https://github.com/nix-community/trustix
+            homepage_url: https://github.com/nix-community/trustix
+          - item:
+            description: Nix Flake Update daemon
+            logo: serokell.png
+            name: update-daemon
+            repo_url: https://github.com/serokell/update-daemon
+            homepage_url: https://github.com/serokell/update-daemon
+          - item:
+            description: NixOS tooling for Hashicorp Vault
+            logo: serokell.png
+            name: vault-secrets
+            repo_url: https://github.com/serokell/vault-secrets
+            homepage_url: https://github.com/serokell/vault-secrets
+          - item:
+            description: Make creation of Wireguard mesh networks easier.
+            logo: default.webp
+            name: wirenix
+            repo_url: https://man.sr.ht/~msalerno/wirenix/
+            homepage_url: https://man.sr.ht/~msalerno/wirenix/
+          - item:
+            description: Vulnerability (CVE) scanner for Nix/NixOS.
+            logo: nix_community.png
+            name: vulnix
+            repo_url: https://github.com/nix-community/vulnix
+            homepage_url: https://github.com/nix-community/vulnix
+          - item:
+            description: This is a tiny type-checker for data in Nix, written in Nix.
+            logo: nix_community.png
+            name: yants
+            repo_url: https://github.com/divnix/yants
+            homepage_url: https://github.com/divnix/yants
+          - item:
+            description: Convert the dependencies in `build.zig.zon` to a Nix
+            logo: nix_community.png
+            name: zon2nix
+            repo_url: https://github.com/nix-community/zon2nix
+            homepage_url: https://github.com/nix-community/zon2nix
